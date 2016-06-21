@@ -14,7 +14,7 @@
   [+] Alias: echo "alias macvendor='php /path/to/dir/macvendor.php'" | tee -a ~/.bash_aliases
 */
 
-  if(!empty($argv[1]) ){
+  if(isset($argv[1]) && !empty($argv[1]) ){
     $mac_address = $argv[1];
 
     if (isMAC($mac_address)){
@@ -24,17 +24,17 @@
       echo "Invalid MAC address!!\n";
     }
 
-
-  }else{
+  }else
     echo "[!] HOW TO USE\n[+] php macvendor.php <MAC_ADDRESS>\n";
-  }
+
 
   function isMAC($mac_address){
-    if(!ereg("^([a-f0-9]{2}\:){5}([a-f0-9]{2}) ?$", $mac_address) )
+    if(!ereg("^([a-fA-F0-9]{2}\:){5}([a-fA-F0-9]{2}) ?$", $mac_address) )
       return false;
     else
       return true;
   }
+
 
   function getVendor($mac_address){
     $url = "http://api.macvendors.com/";
@@ -45,10 +45,10 @@
     curl_setopt($ch, CURLOPT_POSTFIELDS, "mac=$mac_address");
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     $response = curl_exec($ch);
-    if($response) {
+    if($response)
       echo "VENDOR: $response\n";
-    } else {
-      echo "NOT FOUND\n";
+    else {
+      echo "NOT FOUND!!\n";
     }
   }
   echo "\n";
