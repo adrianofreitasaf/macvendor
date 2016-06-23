@@ -4,13 +4,12 @@
   [+] Author: Adriano Freitas
   [+] GitHub: https://github.com/adrianofreitasaf
   [+] License: GPLv3
-  [+] Version: 0.1
+  [+] Version: 0.1.2
 
   [!] Dependencies: sudo apt-get install curl php5 php5-curl
   [!] Execute permission: chmod +x macvendor.php
   [!] how to use: php macvendor.php <MAC_ADDRESS>
 
-  [+] Alias: echo "alias macvendor='php /path/to/dir/macvendor.php'" | tee -a ~/.bash_aliases
 */
 
   if(isset($argv[1]) && !empty($argv[1]) ){
