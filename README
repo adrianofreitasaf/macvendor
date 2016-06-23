@@ -15,4 +15,4 @@ A simple script in php to get the MAC address of the manufacturer entered
   [+] macvendor <MAC_ADDRESS>
 
   [+] EXAMPLE
-  $ macvendor AA:BB:CC:DD:EE:FF
+  [+] $ macvendor AA:BB:CC:DD:EE:FF
