@@ -3,18 +3,16 @@ A simple script in php to get the MAC address of the manufacturer entered
   [+] Author: Adriano Freitas
   [+] GitHub: https://github.com/adrianofreitasaf
   [+] License: GPLv3
-  [+] Version: 0.1
+  [+] Version: 0.2
 
   [!] Dependencies: sudo apt-get install curl php5 php5-curl
 
-  #Configuration
-  [!] Execute permission: chmod +x macvendor.php
-  [+] Alias: echo "alias macvendor='php /path/to/dir/macvendor.php'" | tee -a ~/.bash_aliases
+  [#] HOW TO INSTALL
+  [!] chmod +x install.sh
+  [+] sudo ./install.sh
 
-  [+] how to use: php macvendor.php <MAC_ADDRESS>
-	or if you add an alias
+  [#] HOW TO USE:
   [+] macvendor <MAC_ADDRESS>
 
   [+] EXAMPLE
-  $ php macvendor.php AA:BB:CC:DD:EE:FF 
-
+  $ macvendor AA:BB:CC:DD:EE:FF

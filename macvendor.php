@@ -8,7 +8,6 @@
 
   [!] Dependencies: sudo apt-get install curl php5 php5-curl
   [!] Execute permission: chmod +x macvendor.php
-
   [!] how to use: php macvendor.php <MAC_ADDRESS>
 
   [+] Alias: echo "alias macvendor='php /path/to/dir/macvendor.php'" | tee -a ~/.bash_aliases
@@ -34,7 +33,6 @@
     else
       return true;
   }
-
 
   function getVendor($mac_address){
     $url = "http://api.macvendors.com/";
