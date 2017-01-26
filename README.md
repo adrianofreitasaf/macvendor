@@ -1,9 +1,9 @@
-A simple script in php to get the MAC address of the manufacturer entered
+# MACVendor
 
-  [+] Author: Adriano Freitas
-  [+] GitHub: https://github.com/adrianofreitasaf
+  [+] Author: Adriano Freitas - https://adrianofreitas.me
   [+] License: GPLv3
-  [+] Version: 0.1.2
+
+### A simple script in php to get the MAC address of the manufacturer entered
 
   [!] Dependencies: sudo apt-get install curl php5 php5-curl
 
